@@ -3,7 +3,7 @@ name: Deploy Astro to IONOS SFTP
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   deploy:
