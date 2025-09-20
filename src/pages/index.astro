@@ -1,19 +1,15 @@
 ---
-import Notice from '../components/Notice.astro';
+import Welcome from "../components/Welcome.astro";
+import Layout from "../layouts/Layout.astro";
+
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>En Reformas | EP Imprenta</title>
-    <meta name="description" content="Página en reformas de Entorno Publicitario Imprenta. Pronto novedades. Contacto: informacion@entornopublicitario.es" />
-    <link rel="canonical" href="https://www.entornopublicitario.es/" />
-  </head>
-  <body style="background:#f4f4f4; padding:2rem;">
-    <Notice
-      title="Bienvenidos"
-      message="En estos momentos nos encontramos en reformas.<br/>Espera a nuestras novedades."
-      contact="informacion@entornopublicitario.es"
-    />
-  </body>
-</html>
+
+<Layout>
+  <Welcome
+    title="Bienvenidos"
+    message="En estos momentos nos encontramos en reformas.<br/>Espera a nuestras novedades."
+    contact="informacion@entornopublicitario.es"
+  />
+</Layout>
