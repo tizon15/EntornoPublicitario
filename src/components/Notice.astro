@@ -67,11 +67,5 @@ const { title, message, contact } = Astro.props;
 <div class="notice">
   <h1>{title}</h1>
   <p>En estos momentos nos encontramos en reformas.<br/>Espera a nuestras novedades.</p>
-  <img
-    class="notice-gif"
-    src="/impresora.gif"
-    alt="Impresora imprimiendo"
-    loading="lazy"
-  />
   <p>Para más información contacta a <a href={`mailto:${contact}`}>{contact} o 911302442</a></p>
 </div>
