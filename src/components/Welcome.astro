@@ -1,6 +1,6 @@
 ---
 // En Notice.astro
-const { title, message, contact } = Astro.props;
+const { title, message, contact, contactNumber } = Astro.props;
 ---
 <style>
   .notice {
@@ -67,5 +67,5 @@ const { title, message, contact } = Astro.props;
 <div class="notice">
   <h1>{title}</h1>
   <p>En estos momentos nos encontramos en reformas.<br/>Espera a nuestras novedades.</p>
-  <p>Para más información contacta a <a href={`mailto:${contact}`}>{contact}</a>o 911302442</p>
+  <p>Para más información contacta a <a href={`mailto:${contact}`}>{contact}</a> o <a href={`tel:${contactNumber}`}>{contactNumber}</a></p>
 </div>
